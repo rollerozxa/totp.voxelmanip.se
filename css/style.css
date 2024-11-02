@@ -74,6 +74,8 @@ input {
 	margin: 5px 0;
 	font-size: 14pt;
 	width: 400px;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 #totp-codes {
