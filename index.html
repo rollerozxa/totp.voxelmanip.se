@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TOTP Code Generator</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta property="og:title" content="TOTP Code Generator">
+	<meta name="description" content="Generate Time-based one-time password (TOTP) codes when given a key, usually used as a method for 2-Factor Authentication (2FA) when logging in on various sites. Simply input the key a website provides you and the five subsequent authentication codes are generated.">
+	<meta property="og:description" content="Generate Time-based one-time password (TOTP) codes when given a key, usually used as a method for 2-Factor Authentication (2FA) when logging in on various sites. Simply input the key a website provides you and the five subsequent authentication codes are generated.">
+	<meta property="og:site_name" content="TOTP Code Generator">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://totp.voxelmanip.se">
+	<link rel="canonical" href="https://totp.voxelmanip.se">
+
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+	<header class="top">
+		<h1>TOTP Code Generator</h1>
+
+		<p>Generate Time-based one-time password (TOTP) codes when given a key, usually used as a method for 2-Factor Authentication (2FA) when logging in on various sites. Simply input the key a website provides you and the five subsequent authentication codes are generated.</p>
+
+		<p>The key is only stored locally on your computer and the codes are generated client-side using the Web Crypto API.</p>
+	</header>
+
+	<main>
+		<div class="key-input">
+			<input type="text" id="keyInput" placeholder="Enter Secret Key">
+		</div>
+
+		<div id="totp-codes">
+		</div>
+	</main>
+
+	<footer>
+		Made by <a href="https://voxelmanip.se">ROllerozxa</a> - <a href="https://github.com/rollerozxa/totp.voxelmanip.se">Source code</a>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>

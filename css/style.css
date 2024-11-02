@@ -1,0 +1,93 @@
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Roboto Regular'),
+		url('../fonts/roboto-v29-latin-ext_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Roboto Bold'),
+		url('../fonts/roboto-v29-latin-ext_latin-700.woff2') format('woff2');
+}
+
+body {
+	background-color: #1b1a1f;
+	color: white;
+	font-family: Roboto, sans-serif;
+	font-size: 12pt;
+
+	max-width: 720px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+}
+
+footer {
+	text-align: center;
+	margin: auto;
+	margin-top: 5em;
+	padding: 15px 0;
+}
+
+p {
+	line-height: 1.6;
+}
+
+a {
+	color: #5fff5f;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.top {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+h1 {
+	font-size: 26pt;
+}
+
+.key-input, #location-info {
+	text-align: center;
+}
+
+input {
+	background-color: #4c5053;
+	color: white;
+	border: 0;
+	padding: 15px 15px;
+	margin: 5px 0;
+	font-size: 14pt;
+	width: 400px;
+}
+
+#totp-codes {
+	background-color: rgba(0,0,0,0.2);
+	max-width: 250px;
+	padding: 5px 25px;
+	margin: auto;
+	margin-top: 20px;
+	display: none;
+}
+.code {
+	margin: 15px;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-family: monospace;
+}
